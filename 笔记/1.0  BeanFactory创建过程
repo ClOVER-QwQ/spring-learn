@@ -1,0 +1,28 @@
+1. 定义UserDao和UserService接口及其实现以及xml配置;
+public interface UserDao {}
+public class UserDaoImpl implements UserDao {}
+
+2. 修改UserServiceImp代码，添加一个setUserDao(UserDao userDao)用于接收注入对象;
+public class UserServiceImpl implements UserService
+public void setUserDao(UserDao userDao){
+System.out.println(userDao);
+
+3. 修改beans.xml配置文件，在UserDaolmpl的<bean>中嵌入<property>配置注入;
+<bean id="userService" class="com.clover.service.imp.UserServiceImp">
+   <property name="userDao" ref="userDao"></property>
+</bean>
+
+4. 修改测试代码，获得UserService时，setUserService方法执行了注入操作。
+public class BeanFactoryTest {
+    public static void main(String[] args) {
+        //创建工厂对象
+        DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
+        //创建读取器（读取xml文件）,绑定BeanFactory
+        XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(beanFactory);
+        //读取xml文件
+        reader.loadBeanDefinitions("beans.xml");
+        //根据id获得bean对象
+        UserService userService = (UserService) beanFactory.getBean("userService");
+        System.out.println(userService);
+    }
+}
