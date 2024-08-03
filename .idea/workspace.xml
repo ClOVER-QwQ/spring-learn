@@ -4,23 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba388479-f9b3-4406-8072-78fb9a17a865" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/test.java" afterDir="false" />
-    </list>
+    <list default="true" id="ba388479-f9b3-4406-8072-78fb9a17a865" name="更改" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="四叶 &lt;111031954+clover-qwq@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -34,6 +44,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2k8fBHMPdJs9w75mhYoHUuunPev" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,11 +65,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "D:/learn/spring",
+    "last_opened_file_path": "C:/Users/19706/.m2/repository/org/springframework/spring-aop/5.2.8.RELEASE/spring-aop-5.2.8.RELEASE.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15527344",
     "project.structure.side.proportion": "0.2",
@@ -70,9 +84,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
-      <option name="MAIN_CLASS_NAME" value="main.test" />
+    <configuration name="BeanFactoryTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BeanFactoryTest" />
       <module name="spring" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,7 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.test" />
+        <item itemvalue="应用程序.BeanFactoryTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -92,8 +105,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722669986503</updated>
-      <workItem from="1722669987596" duration="1381000" />
+      <workItem from="1722669987596" duration="5501000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1722671499029</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722671499029</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1722671539223</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722671539223</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1722675048394</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722675048394</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial commit">
+      <created>1722675090570</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722675090570</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial commit">
+      <created>1722675198516</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722675198516</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,11 +153,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
