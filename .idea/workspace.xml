@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba388479-f9b3-4406-8072-78fb9a17a865" name="更改" comment="Initial commit" />
+    <list default="true" id="ba388479-f9b3-4406-8072-78fb9a17a865" name="更改" comment="Merge remote-tracking branch 'origin/dev' into dev">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/clover/factory/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/clover/factory/BeanFactoryFB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/clover/factory/BeanFactoryStatic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/笔记/2.0 ApplicationContext" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/笔记/3.0 基于xml的Spring应用.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/service/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clover/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/service/imp/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clover/service/imp/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/service/imp/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clover/service/imp/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationcontext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BeanFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BeanFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/1.0  BeanFactory创建过程" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/1.0  BeanFactory创建过程" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +93,8 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15527344",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "spring",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "spring.configuration.checksum": "7110190fb2bc3f1a467f2e12fd7e9fc5",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -83,7 +103,7 @@
       <recent name="D:\learn\spring\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.test">
     <configuration name="BeanFactoryTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BeanFactoryTest" />
       <module name="spring" />
@@ -91,8 +111,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.test" />
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.test" />
         <item itemvalue="应用程序.BeanFactoryTest (1)" />
       </list>
     </recent_temporary>
@@ -106,6 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1722669986503</updated>
       <workItem from="1722669987596" duration="5501000" />
+      <workItem from="1722758368388" duration="3657000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1722671499029</created>
@@ -148,24 +183,58 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="dev" />
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="date">
+                    <value>
+                      <list>
+                        <option value="1722654475776" />
+                        <option value="" />
                       </list>
                     </value>
                   </entry>
                 </map>
               </option>
             </State>
+          </value>
+        </entry>
+        <entry key="bd2869f0-2044-466f-a4e2-b298b9448308">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="e56dc4c3-074c-4ea4-a4ba-b5d1bac05572">
+          <value>
+            <State />
           </value>
         </entry>
       </map>

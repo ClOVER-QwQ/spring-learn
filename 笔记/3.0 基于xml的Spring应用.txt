@@ -1,0 +1,41 @@
+Spring开发中主要是对Bean的配置，Bean的常用配置一览如下:
+Xml配置方式
+<bean id="" class="">
+<bean name="">
+<bean scope="">
+<bean lazy-init="">
+<bean init-method="">
+<bean destroy-method="">
+<bean autowire="byType">
+<bean factory-bean="" factory-method=""/>
+功能描述
+Bean的id和全限定名配置
+通过name设置Bean的别名，通过别名也能直接获取到Bean实例
+Bean的作用范围，BeanFactory作为容器时取值singleton和prototype
+Bean的实例化时机，是否延迟加载。BeanFactory作为容器时无效
+Bean实例化后自动执行的初始化方法，method指定方法名
+Bean实例销毁前的方法，method指定方法名
+设置自动注入模式，常用的有按照类型byType，按照名字byName
+指定哪个工厂Bean的哪个方法完成Bean的创建
+
+6)Bean的实例化配置
+Spring的实例化方式主要如下两种:
+构造方式实例化:底层通过构造方法对Bean进行实例化
+    public UserServiceImp(){
+        System.out.println("无参构造");
+    }
+
+    public UserServiceImp(String name){
+        System.out.println("有参构造");
+    }
+    参数设置
+    <constructor-arg name="name" value="tom"></constructor-arg>
+
+工厂方式实例化:底层通过调用自定义的工厂方法对Bean进行实例化
+工厂方式实例化Bean，又分为如下三种:
+静态工厂方法实例化Bean
+建立工厂bean，然后绑定;
+实例工厂方法实例化Bean（第三方jar包的bean的实例化配置）
+建立工厂bean，配置工厂bean，然后绑定;
+实现FactoryBean规范延迟实例化Bean（不常用）
+BeanFactoryFB

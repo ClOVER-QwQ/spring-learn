@@ -9,7 +9,7 @@ public class BeanFactoryTest {
         //创建读取器（读取xml文件）,绑定BeanFactory
         XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(beanFactory);
         //读取xml文件
-        reader.loadBeanDefinitions("beans.xml");
+        reader.loadBeanDefinitions("applicationcontext.xml");
         //根据id获得bean对象
         UserService userService = (UserService) beanFactory.getBean("userService");
         System.out.println(userService);
