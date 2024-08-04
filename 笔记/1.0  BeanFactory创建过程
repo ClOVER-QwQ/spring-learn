@@ -8,7 +8,7 @@ public void setUserDao(UserDao userDao){
 System.out.println(userDao);
 
 3. 修改beans.xml配置文件，在UserDaolmpl的<bean>中嵌入<property>配置注入;
-<bean id="userService" class="com.clover.service.imp.UserServiceImp">
+<bean id="userService" class="imp.com.clover.UserServiceImp">
    <property name="userDao" ref="userDao"></property>
 </bean>
 

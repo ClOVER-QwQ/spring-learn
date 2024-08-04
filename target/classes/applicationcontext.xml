@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDao1" class="com.clover.factory.BeanFactoryStatic" factory-method="userDao"></bean>
+    <bean id="BeanFactory" class="com.clover.factory.BeanFactory"></bean>
+    <bean id="userDao2" factory-bean="BeanFactory" factory-method="userDao"></bean>
+    <bean id="userDao3" class="com.clover.factory.BeanFactoryFB"></bean>
+<!--    <bean id="userService" class="com.clover.service.imp.UserServiceImp" init-method="init" destroy-method="destroy">-->
+<!--        <constructor-arg name="name" value="tom"></constructor-arg>-->
+<!--        <property name="userDao" ref="userDao"></property>-->
+<!--    </bean>-->
+    <bean id="userDao" class="com.clover.service.imp.UserDaoImp"></bean>
+</beans>
