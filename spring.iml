@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset" name="Beans" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/applicationcontext.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -20,11 +21,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.2.8.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.2.8.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.2.8.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-core:5.2.8.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.2.8.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.2.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.20" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.20" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.20" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:5.3.20" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.3.20" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.20" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:6.0.7" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:6.0.7" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-observation:1.10.4" level="project" />
+    <orderEntry type="library" name="Maven: io.micrometer:micrometer-commons:1.10.4" level="project" />
   </component>
 </module>
