@@ -1,0 +1,64 @@
+Spring 配置非自定义Bean
+以上在 xm| 中配置的Bean都是自己定义的，例如:UserDaolmpl，UserServicelmpl。但是，在实际开发中有些
+功能类并不是我们自己定义的，而是使用的第三方jar包中的，那么，这些Bean要想让Spring进行管理，也需要对
+其进行配置
+配置非自定义的Bean需要考虑如下两个问题:
+被配置的Bean的实例化方式是什么?无参构造
+被配置的Bean是否需要注入必要属性。是
+
+1)配置 Druid 数据源交由Spring管理
+导入Druid坐标
+mysql驱动
+<dependency>
+<groupId>mysql</groupId>
+<artifactId>mysql-connector-java</artifactId)
+<version>5.1.49</version>
+</dependency>
+druid数据源
+<dependency>
+<groupId>com.alibaba</groupId>
+<artifactId>druid</artifactId>
+<version>1.1.23</version>
+</dependency>
+
+2)配置Connection交由Spring管理
+Connection 的产生是通过DriverManager的静态方法getConnection获取的，所以我们要用静态工厂方式配置
+<bean class="java.lang.Class" factory-method"forName">
+<value="com.mysql.jdbc.Driver"/>
+<constructor-arg name="className" value="com.mysql.jdbc.Driver"
+</bean>
+
+<bean id="connection' class="java.sal.DriverManager" factory-method="getConnection" scope="prototype">
+<constructor-arg name="url" value="jdbc:mysql://localhost:3306/xxxx"/>
+<constructor-arg name="username" value="root"/>
+<construct-arg name="password" value="">
+</bean>
+
+3)配置日期对象交由Spring管理
+产生一个指定日期格式的对象，原始代码按如下:
+String currentTimestr=2023-08-2707:20:00";
+SimpleDateFormat simpleDateFormat = new SimpleDateFormat ("yyyy-MM-dd HH:mm:ss") ;
+Date date simpleDateFormat.parse(currentTimestr);
+使用Spring配置方式产生Date实例
+可以看成是实例工厂方式，
+<bean id="simpleDateFormat" class="java.text.SimpleDateFormat">
+<constructor-arg name="pattern" value="yyyy-MM-dd HH:mm:ss"/>
+</bean>
+<bean id="date" factory-method="parse" factory-bean="simpleDateFormat">
+<constructor-arg name="source" value="2023-08-27 07:20:00"/>
+</bean>
+
+4)配置MyBatis的SqlSessionFactory交由Spring管理
+导入MyBatis的相关坐标:
+-mybatis框架-->
+<dependency>
+<groupId>org.mybatis</groupId>
+<artifactId>mybatis</artifactId>
+<version>3.5.5</version>
+</dependency>
+mysql驱区动
+<dependency>
+<groupId>mysql</groupId>
+<artifactId>mysql-connector-java</artifactId>
+<version>5.1.49</version>
+</dependency>

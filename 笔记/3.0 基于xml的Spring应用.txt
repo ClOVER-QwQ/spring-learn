@@ -124,3 +124,20 @@ Spring的自定义标签需要引入外部的命名空间，并为外部的命�
 <context:property-placeholder/>
 <mve:annotation-driven/>
 <dubbo:application name="application"/>
+
+Spring 的get方法
+方法定义
+Object getBean (String beanName)
+T getBean (Class type)
+T getBean(String beanName, Class type)
+返回值和参数
+根据beanName从容器中获取Bean实例，要求容器中Bean唯一，返回值为Object，需要强转
+根据Class类型从容器中获取Bean实例，要求容器中Bean类型唯一，返回值为Class类型实例
+无需强转
+根据beanName从容器中获得Bean实例，返回值为Class类型实例，无需强转
+//根据beanName获取容器中的Bean实例，需要手动强转
+UserService userService = (UserService)applicationContext.getBean("userService");
+//根据Bean类型去容器中匹配对应的Bean实例，如存在多个匹配Bean则报错
+UserService userService2 = applicationContext.getBean(UserService.class);
+//根据beanName获取容器中的Bean实例，指定Bean的Type类型
+UserService userService3 = applicationContext.getBean("userService",UserService.class);
