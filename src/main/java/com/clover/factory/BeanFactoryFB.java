@@ -1,7 +1,7 @@
 package com.clover.factory;
 
 import com.clover.dao.UserDao;
-import com.clover.service.imp.UserDaoImp;
+import com.clover.dao.imp.UserDaoImp;
 import org.springframework.beans.factory.FactoryBean;
 
 public class BeanFactoryFB implements FactoryBean {
