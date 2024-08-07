@@ -8,7 +8,9 @@ public class BeanPostTest {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beanpost.xml");
         Object userDao = applicationContext.getBean("userDao");
         System.out.println(userDao);
-        Object operatorDao = applicationContext.getBean("beanDefinitionRegistry");
-        System.out.println(operatorDao);
+//        Object operatorDao = applicationContext.getBean("beanDefinitionRegistry");
+//        System.out.println(operatorDao);
+//        Object otherBeans = applicationContext.getBean("otherBean");
+//        System.out.println(otherBeans);
     }
 }

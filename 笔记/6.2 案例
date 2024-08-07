@@ -1,0 +1,6 @@
+案例
+使用Spring的BeanFactoryPostProcessor扩展点完成自定义注解扫描
+要求如下:
+自定义@MyComponent注解，使用在类上;
+使用资料中提供好的包扫描器工具BaseClassScanUtils 完成指定包的类扫描;
+自定义BeanFactoryPostProcessor完成注解@MyComponent的解析，解析后最终被Spring管理。
