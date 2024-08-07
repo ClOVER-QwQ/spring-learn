@@ -24,9 +24,9 @@
         </property>
         <property name="userDaoSet">
             <set>
-                <!--                <bean class="com.clover.service.imp.UserDaoImp"></bean>-->
-                <!--                <bean class="com.clover.service.imp.UserDaoImp"></bean>-->
-                <!--                <bean class="com.clover.service.imp.UserDaoImp"></bean>-->
+                <!--                <bean class="com.clover.dao.imp.UserDaoImp"></bean>-->
+                <!--                <bean class="com.clover.dao.imp.UserDaoImp"></bean>-->
+                <!--                <bean class="com.clover.dao.imp.UserDaoImp"></bean>-->
                 <ref bean="userDao"/>
                 <ref bean="userDao1"/>
                 <ref bean="userDao2"/>
@@ -60,8 +60,9 @@
             </props>
         </property>
     </bean>
-    <bean id="userDao" class="com.clover.service.imp.UserDaoImp"/>
+    <bean id="userDao" class="com.clover.dao.imp.UserDaoImp"/>
+    <bean id="workDaoImp" class="com.clover.dao.imp.OperatorDaoImp"/>
     <beans profile="dev">
-        <bean id="userDao" class="com.clover.service.imp.UserDaoImp"/>
+        <bean class="com.clover.dao.imp.UserDaoImp"/>
     </beans>
 </beans>
