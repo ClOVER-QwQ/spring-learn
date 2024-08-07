@@ -1,0 +1,44 @@
+Spring容器在进行初始化时，会将xml配置的<bean>的信息封装成一个BeanDefinition对象，所有的
+BeanDefinition存储到一个名为beanDefinitionMap的Map集合中去，Spring框架在对该Map进行遍历，使用反
+射创建Bean实例对象，创建好的Bean对象存储在一个名为singletonObjects的Map集合中，当调用getBean方法
+时则最终从该Map集合中取出Bean实例对象返回。
+
+-Bean 实例化的基本流程
+Bean信息定义对象-BeanDefinition
+<bean id="" beanname="" Class="" lazy-init="" scope="n init-method="" destroy-method="" factory-bean="" factory-method="" abstract="" depends-on="" parent="">
+<property name="" ref=""/>
+<property name="" ref=""/>
+<property name="" value=""/>
+</bean>
+
+public interface BeanDefinition
+String SCOPE SINGLETON = "singleton";
+String SCOPE PROTOTYPE = "prototype";
+void setBeanClassName(@Nullable String varl);
+String getBeanClassName();
+void setScope(@Nullable String varl);
+String getScope();
+void setLazyInit(boolean var1);
+boolean isLazyInit();
+void setFactoryBeanName(@Nullable String varl);
+String getFactoryBeanName();
+void setFactoryMethodName(@Nullable String varl);
+String getFactoryMethodName();
+void setInitMethodName(@Nullable String varl);
+String getInitMethodName();
+省略部分属性和方法
+
+DefaultListableBeanFactory对象内部维护着一个Map用于存储封装好的BeanDefinitionMap
+public class DefaultListableBeanFactory extends ...
+implements...{
+//存储<bean>标签对应的BeanDefinition对象
+//key:是Bean的beanName，value:是Bean定X对象BeanDefinition
+private final Map<String, BeanDefinition> beanDefinitionMap;
+Spring框架会取出beanDefinitionMap中的每个BeanDefinition信息，反射构造方法或调用指定的工厂方法
+生成Bean实例对象，所以只要将BeanDefinition注册到beanDefinitionMap这个Map中，Spring就会进行对应的Bean的实例化操作
+
+加载xml配置文件，解析获取配置中的每个<bean>的信息，封装成一个个的BeanDefinition对象,
+将BeanDefinition存储在一个名为beanDefinitionMap的Map<String,BeanDefinition>中;
+ApplicationContext底层遍历beanDefinitionMap，创建Bean实例对象;
+创建好的Bean实例对象，被存储到一个名为singletonObjects的Map<String,Object>中;
+当执行applicationContext.getBean(beanName)时，从singletonObjects去匹配Bean实例返回。

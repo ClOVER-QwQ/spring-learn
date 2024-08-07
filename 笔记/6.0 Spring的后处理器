@@ -1,0 +1,24 @@
+Spring的后处理器是Spring对外开发的重要扩展点，允许我们介入到Bean的整个实例化流程中来，以达到动态注册
+BeanDefinition，动态修改BeanDefinition，以及动态修改Bean的作用。Spring主要有两种后处理器:
+BeanFactoryPostProcessor:Bean工厂后处理器，在BeanDefinitionMap填充完毕，Bean实例化之前执行
+BeanPostProcessor:Bean后处理器，一般在Bean实例化之后，填充到单例池singletonObjects之前执行。
+
+BeanFactoryPostProcessor是一个接口规范，实现了该接口的类只要交由Spring容器管理的话，那么Spring就会回
+调该接口的方法，用于对BeanDefinition注册和修改的功能。
+BeanFactoryPostProcessor定义如下:
+public interface BeanFactoryPostProcessor
+void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory);
+
+Spring 提供了一个BeanFactoryPostProcessor的子接囗BeanDefinitionRegistryPostProcessor专门用于注册
+BeanDefinition操作
+public class MyBeanFactoryPostProcessor2
+implements BeanDefinitionRegistryPostProcessor
+@Override
+public void postProcessBeanFactory(ConfigurableListableBeanFactory
+configurableListableBeanFactory)throws BeansException{}
+@Override
+public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry beanDefinitionRegistry)
+throws BeansException{
+BeanDefinition beanDefinition = new RootBeanDefinition();
+beanDefinition.setBeanClassName("com.clover.dao.userDaoImpl2");
+beanDefinitionRegistry.registerBeanDefinition("userDao2",beanDefinition);

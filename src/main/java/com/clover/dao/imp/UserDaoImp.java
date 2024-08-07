@@ -1,4 +1,4 @@
-package com.clover.service.imp;
+package com.clover.dao.imp;
 
 import com.clover.dao.UserDao;
 
