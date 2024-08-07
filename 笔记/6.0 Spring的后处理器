@@ -22,3 +22,25 @@ throws BeansException{
 BeanDefinition beanDefinition = new RootBeanDefinition();
 beanDefinition.setBeanClassName("com.clover.dao.userDaoImpl2");
 beanDefinitionRegistry.registerBeanDefinition("userDao2",beanDefinition);
+
+Bean后处理器-BeanPostProcessor
+Bean被实例化后，到最终缓存到名为singletonObjects单例池之前，中间会经过Bean的初始化过程，例如:属性的
+填充、初始方法init的执行等，其中有一个对外进行扩展的点BeanPostProcessor，我们称为Bean后处理。跟上面的
+Bean工厂后处理器相似，它也是一个接口，实现了该接口并被容器管理的BeanPostProcessor，会在流程节点上被
+Spring自动调用。
+
+Bean后处理器-BeanPostProcessor
+BeanPostProcessor的接定义如下:
+public interface BeanPostProcessor
+@Nullable
+//在属性注入完毕，init初始化方法执行之前被回调
+default Object postProcessBeforeInitialization(Object bean, String beanName) throws
+BeansException{
+return bean;
+}
+@Nullable
+//在初始化方法执行之后，被添加到单例池singletonobjects之前被回调
+default Object postProcessAfterInitialization(Object bean, String beanName) throws
+BeansException{
+return bean;
+}
