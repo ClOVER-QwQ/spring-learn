@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba388479-f9b3-4406-8072-78fb9a17a865" name="更改" comment="Merge remote-tracking branch 'origin/dev' into dev">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/clover/anno/MyComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/clover/beans/OtherBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/clover/processor/MyBeanPostProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/clover/processor/MyComponentBeaFactoryPostProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/clover/utils/BaseClassScanUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/笔记/6.0 Spring的后处理器.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/笔记/6.2 案例" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/笔记/6.0 Spring后处理器.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/笔记/7.0 Spring的生命周期" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/笔记/7.1 循环引用.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/dao/imp/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clover/dao/imp/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/dao/WorkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clover/dao/WorkDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/dao/imp/WorkDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clover/dao/imp/WorkDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/processor/MyBeanPostProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clover/processor/MyBeanPostProcess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/BeanPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BeanPostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/beanpost.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/beanpost.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/6.0 Spring的后处理器" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/6.0 Spring的后处理器" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/6.0 Spring的后处理器" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/6.0 Spring的后处理器2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/6.2 案例" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/6.2 案例" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +81,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "D:/learn/Web/WebTOM/webapps/Web/web/WEB-INF/lib/servlet-api.jar",
+    "last_opened_file_path": "D:/learn/spring/笔记",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -106,13 +102,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.clover.dao.imp" />
       <recent name="com.clover.anno" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learn\spring\笔记" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\learn\spring\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.UserServiceTest">
+  <component name="RunManager" selected="应用程序.BeanPostTest">
     <configuration name="BaseClassScanUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.clover.utils.BaseClassScanUtils" />
       <module name="spring" />
@@ -180,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.UserServiceTest" />
         <item itemvalue="应用程序.BeanPostTest" />
-        <item itemvalue="应用程序.BaseClassScanUtils" />
+        <item itemvalue="应用程序.UserServiceTest" />
         <item itemvalue="应用程序.ThirdPartyBeanTest" />
         <item itemvalue="应用程序.DifEnviBeansTest" />
+        <item itemvalue="应用程序.BaseClassScanUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +203,7 @@
       <workItem from="1722995216575" duration="7653000" />
       <workItem from="1723003800073" duration="16000" />
       <workItem from="1723069983803" duration="3835000" />
+      <workItem from="1723166091929" duration="4317000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1722671499029</created>
