@@ -44,3 +44,33 @@ default Object postProcessAfterInitialization(Object bean, String beanName) thro
 BeansException{
 return bean;
 }
+
+填充完毕后回调
+workDao IMP
+userDao:post before initialization
+afterPropertiesSet
+workDao init
+userDao:post after initialization
+com.clover.dao.imp.WorkDaoImp@2145433b
+
+Bean后处理器-BeanPostProcessor
+编写BeanPostProcessor，增强逻辑编写在 after方法中
+public Object postProcessAfterInitialization(Object bean, String beanName) throws
+BeansException
+//对Bean进行动态代理，返回的是Proxy代理对象
+Obiect proxyBean = Proxy.newProxyInstance(bean.getClass().getClassLoader (),
+bean.getClass().qetInterfaces()
+(0bject proxy,Method method,Object[largs)->{
+long start
+=System.currentTimeMillis();
+System.out.println("开始时间:"+new Date(start));
+//执行目标方法
+Object result=method.invoke(bean，args);
+long end =System.currentTimeMillis();
+System.out.println("结束时间:"+new Date(end));
+return result;
+}):
+//返回代理对象
+return proxyBean;
+}
+

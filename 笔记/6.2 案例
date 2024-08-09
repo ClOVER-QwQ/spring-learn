@@ -4,3 +4,13 @@
 自定义@MyComponent注解，使用在类上;
 使用资料中提供好的包扫描器工具BaseClassScanUtils 完成指定包的类扫描;
 自定义BeanFactoryPostProcessor完成注解@MyComponent的解析，解析后最终被Spring管理。
+
+案例
+对Bean方法进行执行时间日志增强
+要求如下:
+Bean的方法执行之前控制台打印当前时间
+Bean的方法执行之后控制台打印当前时间。
+分析:
+对方法进行增强主要就是代理设计模式和包装设计模式，
+由于Bean方法不确定，所以使用动态代理在运行期间执行增强操作;
+在Bean实例创建完毕后，进入到单例池之前，使用Proxy代替真是的目标Bean.
