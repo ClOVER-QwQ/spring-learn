@@ -14,4 +14,7 @@
             </dataSource>
         </environment>
     </environments>
+    <mappers>
+        <package name="com.clover.mapper"/>
+    </mappers>
 </configuration>

@@ -1,0 +1,12 @@
+xml整合第三方框架有两种整合方案:
+不需要自定义名空间，不需要使用Spring的配置文件配置第三方框架本身内容，例如:MyBatis;
+需要引入第三方框架命名空间，需要使用Spring的配置文件配置第三方框架本身内容，例如:Dubbo.
+
+Spring整合MyBatis，之前已经在Spring中简单的配置了SqlSessionFactory，但是这不是正规的整合方式
+MyBatis提供了mybatis-spring.jar专门用于两大框架的整合。
+Spring整合MyBatis的步骤如下:
+导入MyBatis整合Spring的相关坐标;
+(请见资料中的pom.xml)
+编写Mapper和Mapper.xml;
+配置SqlSessionFactoryBean和MapperScannerConfigurer;
+编写测试代码
