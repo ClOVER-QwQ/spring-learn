@@ -30,3 +30,36 @@ Spring在进行属性注入时，会分为如下几种情况:
 注入对象Bean实例(完成整个生命周期)后，在进行注入操作;
 注入双向对象引用属性时，就比较复杂了，涉及了循环引用(循环依赖)问题，下面会详细述解决方案。
 PS:通过代码验证上述第二第三种属性填充……
+
+Bean实例属性填充
+UserService和UserDao循环依赖的过程结合上述三级缓存描述一下
+UserService 实例化对象，但尚未初始化，将UserService存储到三级缓存;
+UserService 属性注入，需要UserDao，从缓存中获取，没有UserDao;
+UserDao实例化对象，但尚未初始化，将UserDao存储到到三级缓存;
+UserDao属性注入，需要UserService，从三级缓存获取UserService，UserService从三级缓存移入二级缓存;
+UserDao执行其他生命周期过程，最终成为一个完成Bean，存储到一级缓存，删除二三级缓存;
+UserService注入UserDao;
+UserService执行其他生命周期过程，最终成为一个完成Bean，存储到一级缓存，删除二三级缓存。
+
+常用的Aware接口
+Aware接口是一种框架辅助属性注入的一种思想，其他框架中也可以看到类似的接口。框架具备高度封装性，我们接
+触到的一般都是业务代码，一个底层功能AP!不能轻易的获取到，但是这不意味着永远用不到这些对象，如果用到了
+就可以使用框架提供的类似Aware的接口，让框架给我们注入该对象。
+Aware接口
+ServletContextAware
+BeanFactoryAware
+BeanNameAware
+ApplicationContextAware
+回调方法
+setServletContext(ServetContext context)
+setBeanFactory(BeanFactory factory)
+setBeanName(String beanName)
+setApplicationContext(ApplicationContext applicationContext)
+作用
+Spring框架回调方法注入ServletContext对象
+web环境下才生效
+Spring框架回调方法注入beanFactory对象
+Spring框架回调方法注入当前Bean在容器中
+的beanName
+Spring框架回调方法注入applicationContext
+对象
