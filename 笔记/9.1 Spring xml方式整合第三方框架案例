@@ -1,0 +1,14 @@
+案例
+设想自己是一名架构师，进行某一个框架与Spring的集成开发
+效果是通过一
+指示标签，向Spring容器中自动注入一个BeanPostProcessor
+<beans
+xmlns="http://www.springframework,org/schema/beans"
+xmlns:xsi-"http://www.w3.org/2001/xmlschema-instance"
+xmlns:clover="http://www.itheima.com/haohao"
+xsi:schema location="http://www,springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.itheima.com/haohao
+http://www.itheima.com/haohao/haohao-annotation.xsd">
+<clover:annotation-driven/>
+</beans>
