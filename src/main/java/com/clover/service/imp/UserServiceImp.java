@@ -1,16 +1,10 @@
 package com.clover.service.imp;
 
-import com.clover.dao.UserDao;
 import com.clover.mapper.UserMapper;
 import com.clover.pojo.User;
 import com.clover.service.UserService;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.context.annotation.EnableMBeanExport;
 
 import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
 
 public class UserServiceImp implements UserService{
     private UserMapper userMapper;

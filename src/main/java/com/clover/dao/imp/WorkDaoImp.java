@@ -8,17 +8,13 @@ public class WorkDaoImp implements WorkDao, InitializingBean {
         System.out.println("workDao IMP");
     }
 
-    private void init() {
-        System.out.println("workDao init");
-    }
-
-    @Override
-    public void afterPropertiesSet() throws Exception {
-        System.out.println("afterPropertiesSet");
-    }
-
     @Override
     public void show() {
         System.out.println("show");
+    }
+
+    @Override
+    public void afterPropertiesSet() {
+        System.out.println("afterPropertiesSet");
     }
 }

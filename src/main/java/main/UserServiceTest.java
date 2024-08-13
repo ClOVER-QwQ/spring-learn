@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class UserServiceTest {
     public static void main(String[] args) {
-//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationcontext.xml");
+//        ApplicationContext = new ClassPathXmlApplicationContext("applicationcontext.xml");
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-mybatis.xml");
         UserService userService = (UserService) applicationContext.getBean("userService");
         userService.show();
