@@ -1,0 +1,29 @@
+案例
+设想自己是一名架构师，进行某一个框架与Spring的集成开发
+效果是通过一
+指示标签，向Spring容器中自动注入一个BeanPostProcessor
+<beans
+xmlns="http://www.springframework,org/schema/beans"
+xmlns:xsi-"http://www.w3.org/2001/xmlschema-instance"
+xmlns:clover="http://www.itheima.com/haohao"
+xsi:schema location="http://www,springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.itheima.com/haohao
+http://www.itheima.com/haohao/haohao-annotation.xsd">
+<clover:annotation-driven/>
+</beans>
+
+步骤
+1.确定命名空间名称、schema虚拟路径、标签名称;
+编写schema约束文件clover-annotation.xsd
+2.
+在类加载路径下创建META目录，编写约束映射文件spring.schemas和处理器映射文件spring.handlers
+3
+编写命名空间处理器 CloverNamespaceHandler，在init方法中注册 CloverBeanDefinitionParse;
+4
+编写标签的解析器 CloverBeanDefinitionParser，在parse方法中注册 CloverBeanPostProcessor
+编写CloverBeanPostProcessor
+6.
+==========以上五步是框架开发者写的，以下是框架使用者写的===========
+1.在applicationContext.xml配置文件中引入命名空间
+2.在applicationContext.xml配置文件中使用自定义的标签

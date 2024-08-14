@@ -6,7 +6,7 @@ import org.springframework.beans.factory.FactoryBean;
 
 public class BeanFactoryFB implements FactoryBean {
     @Override
-    public Object getObject() throws Exception {
+    public Object getObject() {
         return new UserDaoImp();
     }
 
