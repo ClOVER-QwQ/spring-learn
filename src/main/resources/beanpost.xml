@@ -5,8 +5,8 @@
 
     <bean id="myBeanFactoryPostProcessor" class="com.clover.processor.MyBeanFactoryPostProcessor"/>
     <bean id="userDao" class="com.clover.dao.imp.UserDaoImp" init-method="init"/>
-    <bean id="workDao" class="com.clover.dao.imp.WorkDaoImp"/>
-    <bean id="beanDefinitionRegistry" class="com.clover.processor.MyBeanDefinitionRegistry"/>
-    <bean id="myComponentBeaFactoryPostProcess" class="com.clover.processor.MyComponentBeaFactoryPostProcess"/>
+<!--    <bean id="workDao" class="com.clover.dao.imp.WorkDaoImp"/>-->
+<!--    <bean id="beanDefinitionRegistry" class="com.clover.processor.MyBeanDefinitionRegistry"/>-->
+<!--    <bean id="myComponentBeaFactoryPostProcess" class="com.clover.processor.MyComponentBeaFactoryPostProcess"/>-->
     <bean id="myBeanPostProcess" class="com.clover.processor.MyBeanPostProcess"/>
 </beans>

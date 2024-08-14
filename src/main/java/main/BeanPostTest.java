@@ -1,6 +1,7 @@
 package main;
 
 import com.clover.dao.WorkDao;
+import com.clover.dao.imp.WorkDaoImp;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
