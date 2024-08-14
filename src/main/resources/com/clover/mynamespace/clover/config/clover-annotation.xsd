@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xsd:schema
-        xmlns="http://www.cloverassociation.com/clover"
-        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        targetNamespace="http://www.cloverassociation.com/clover">
-        <xsd:element name="annotation-driven"/>
-</xsd:schema>

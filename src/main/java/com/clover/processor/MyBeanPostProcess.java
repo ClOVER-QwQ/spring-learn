@@ -17,7 +17,7 @@ public class MyBeanPostProcess implements BeanPostProcessor {
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         System.out.println(beanName+":post after initialization");
         //使用动态代理对目标Bean进行增强，返回proxy对象，进而存储到单例池singletonobjects中
-        return Proxy.newProxyInstance(
+        Object beanproxy = Proxy.newProxyInstance(
                 bean.getClass().getClassLoader(),
                 bean.getClass().getInterfaces(),
                 (proxy, method, args) ->
@@ -30,5 +30,6 @@ public class MyBeanPostProcess implements BeanPostProcessor {
                     System.out.println("方法:" + method.getName() + "-结束时间:" + new Date());
                     return result;
                 });
+        return beanproxy;
     }
 }

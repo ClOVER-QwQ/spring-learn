@@ -21,7 +21,7 @@ public class BaseClassScanUtils {
     public static Map<String, Class> scanMyComponentAnnotation(String basePackage) {
 
         // 创建容器存储使用了指定注解的Bean字节码对象
-        Map<String, Class> annotationClassMap = new HashMap<>();
+        Map<String, Class> annotationClassMap = new HashMap<String, Class>();
 
         // spring工具类，可以获取指定路径下的全部类
         ResourcePatternResolver resourcePatternResolver = new PathMatchingResourcePatternResolver();
@@ -54,7 +54,7 @@ public class BaseClassScanUtils {
 
                 }
             }
-       } catch (Exception ignored) {
+       } catch (Exception exception) {
         }
 
         return annotationClassMap;
