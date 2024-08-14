@@ -1,0 +1,45 @@
+基本Bean注解，
+主要是使用注解的方式替代原有xml的<bean>标签及其标签属性的配置
+<bean id="" name="" Class="" scope="" lazy-init="" init-method="" destroy-method="" abstract="" autowire="" factory-bean="" factory-method=""></bean>
+使用@Component 注解替代<bean>标签
+xml配置
+<bean id="" class="">
+注解
+@Component
+描述:被该注解标识的类，会在指定扫描范围内被spring加载并实例化
+
+@Component就单纯-个value属性，那么xml配置<bean>时那些属性怎么进行配置呢?
+Spring是通过注解方式去配置的之前 <bean>标签中的那些属性，例如:使用@Component 注解替代<bean>标签
+xml配置                      注解                 描述
+<bean scope="">             @Scope              在类上或使用了@Bean标注的方法上，标注Bean的作用范围，取值为singleton或prototype
+<bean lazy-init="">         @Lazy               在类上或使用了@Bean标注的方法上，标注Bean是否延迟加载，取值为true和false
+<bean init-method="">       @PostConstruct      在方法上使用，标注Bean的实例化后执行的方法
+<bean destroy-method="">    @PreDestroy         在方法上使用，标注Bean的销毁前执行方法
+
+由于JavaEE开发是分层的，为了每层Bean标识的注解语义化更加明确，@Component又衍生出如下三个注解
+衍生注解        描述
+@Repository   在Dao层类上使用
+@Service      在Service层类上使用
+@Controller   在Web层类上使用
+
+@Repository("userDao")
+public class UserDaoImpl{
+implements UserDao{}
+@Service(“userService”)
+public class UserServiceImpl implements UserService{}
+@Controller("userService")
+public class UserController {}
+}
+
+Bean依赖注入的注解,主要是使用注解的方式替代xml的
+<property>己成属性的注入操作
+<bean id=" Class=“”>
+<property name="" value=""/>
+<property name=“” ref=""/>
+</bean>
+Spring主要提供如下注解，用于在Bean内部进行属性注入的:
+属性注入注解      描述
+@Value         使用在字段或方法上，用于注入普通数据
+@Autowired     使用在字段或方法上，用于根据类型(byType)注入引用数据
+@Qualifier     使用在字段或方法上，结合@Autowired，根据名称注入
+@Resource      使用在字段或方法上，根据类型或名称进行注入

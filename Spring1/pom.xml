@@ -10,6 +10,7 @@
             <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
     </repositories>
+
     <build>
         <plugins>
             <plugin>
@@ -25,7 +26,7 @@
     </build>
 
     <groupId>groupId</groupId>
-    <artifactId>spring</artifactId>
+    <artifactId>spring1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
