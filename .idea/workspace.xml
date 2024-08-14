@@ -5,24 +5,105 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba388479-f9b3-4406-8072-78fb9a17a865" name="更改" comment="Merge remote-tracking branch 'origin/dev' into dev">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/clover/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/clover/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/clover/mapper/usermapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/笔记/7.2三级缓存.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/笔记/7.3 三级缓存的源码解析.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/笔记/8.0 Spring ICO容器整体理解.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/笔记/9.0 Spring xml方式整合第三方框架" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85a81eb7-40e6-45ff-82a6-2594132d2b5a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/85a81eb7-40e6-45ff-82a6-2594132d2b5a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85a81eb7-40e6-45ff-82a6-2594132d2b5a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85a81eb7-40e6-45ff-82a6-2594132d2b5a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85a81eb7-40e6-45ff-82a6-2594132d2b5a/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85a81eb7-40e6-45ff-82a6-2594132d2b5a/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85a81eb7-40e6-45ff-82a6-2594132d2b5a/storage_v2/_src_/schema/userinfo.-XIn8A.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_10_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_10_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_6_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_49.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_6_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_8_7_12_06____.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/___.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2024_8_7_12_06_取消提交了更改_[更改]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2024_8_7_12_06_取消提交了更改_[更改]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/MybatisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记/7.0 Spring的生命周期" beforeDir="false" afterPath="$PROJECT_DIR$/笔记/7.0 Spring的生命周期" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/anno/MyComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/beans/OtherBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/dao/Operator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/dao/WorkDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/dao/imp/OperatorDaoImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/dao/imp/UserDaoImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/dao/imp/WorkDaoImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/factory/BeanFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/factory/BeanFactoryFB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/factory/BeanFactoryStatic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/processor/MyBeanDefinitionRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/processor/MyBeanFactoryPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/processor/MyBeanPostProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/processor/MyComponentBeaFactoryPostProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/service/imp/UserServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clover/utils/BaseClassScanUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/BeanFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/BeanPostTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DateTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/DifEnviBeansTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/MybatisTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/ThirdPartyBeanTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/UserServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ThirdPartyBean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationcontext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beanpost.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/clover/mapper/usermapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/date.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-bean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BeanFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ThirdPartyBean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationcontext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/date.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-bean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/0.0 自我感悟" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/1.0  BeanFactory创建过程" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/2.0 ApplicationContext" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/3.0 基于xml的Spring应用.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/4.0 Spring 配置非自定义Bean" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/5.0 Bean 实例化的基本流程" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/5.1 bean实例化流程.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/6.0 Spring后处理器.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/6.0 Spring的后处理器.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/6.0 Spring的后处理器2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/6.2 案例" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/7.0 Spring的生命周期" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/7.1 循环引用.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/7.2三级缓存.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/7.3 三级缓存的源码解析.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/8.0 Spring ICO容器整体理解.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记/9.0 Spring xml方式整合第三方框架" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +113,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
         <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
+        <option value="spring-beans.schema" />
+        <option value="Jupyter Notebook" />
         <option value="Class" />
       </list>
     </option>
@@ -49,6 +131,7 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$/Spring1" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,6 +147,11 @@
       <MavenGeneralSettings>
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="2k8fBHMPdJs9w75mhYoHUuunPev" />
@@ -90,17 +178,18 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/learn/spring/笔记&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/learn/Spring&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDK&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15527344&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;98d66cefa0fbd62468854a1ec80f8462&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e0164274697fbc50ccfd175c0dae12d1&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -111,23 +200,29 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.clover.handlers" />
       <recent name="com.clover.dao.imp" />
       <recent name="com.clover.anno" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learn\Spring\Spring2" />
       <recent name="D:\learn\spring\笔记" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\learn\spring\src\main\java" />
+      <recent name="D:\learn\Spring\Spring1" />
+      <recent name="D:\learn\Spring\Spring2" />
+      <recent name="D:\learn\spring" />
+      <recent name="D:\learn\spring\spring1\src" />
+      <recent name="D:\learn\spring\spring1" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="BaseClassScanUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.clover.utils.BaseClassScanUtils" />
-      <module name="spring" />
+  <component name="RunManager" selected="应用程序.BeanPostTest">
+    <configuration name="BeanFactoryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.BeanFactoryTest" />
+      <module name="spring1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.clover.utils.*" />
+          <option name="PATTERN" value="main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,7 +232,7 @@
     </configuration>
     <configuration name="BeanPostTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.BeanPostTest" />
-      <module name="spring" />
+      <module name="spring1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -150,7 +245,7 @@
     </configuration>
     <configuration name="DifEnviBeansTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.DifEnviBeansTest" />
-      <module name="spring" />
+      <module name="spring1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -163,7 +258,7 @@
     </configuration>
     <configuration name="ThirdPartyBeanTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.ThirdPartyBeanTest" />
-      <module name="spring" />
+      <module name="spring1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -176,7 +271,7 @@
     </configuration>
     <configuration name="UserServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.UserServiceTest" />
-      <module name="spring" />
+      <module name="spring1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -187,13 +282,140 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="Spring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Spring" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Spring" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="Spring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Spring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="Spring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="Spring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="Spring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="Spring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.BeanPostTest" />
+        <item itemvalue="应用程序.BeanFactoryTest" />
         <item itemvalue="应用程序.UserServiceTest" />
         <item itemvalue="应用程序.ThirdPartyBeanTest" />
         <item itemvalue="应用程序.DifEnviBeansTest" />
-        <item itemvalue="应用程序.BaseClassScanUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -215,6 +437,16 @@
       <workItem from="1723166091929" duration="4317000" />
       <workItem from="1723190411588" duration="597000" />
       <workItem from="1723418489308" duration="4725000" />
+      <workItem from="1723455370379" duration="4694000" />
+      <workItem from="1723460250316" duration="1715000" />
+      <workItem from="1723519160053" duration="4243000" />
+      <workItem from="1723524510633" duration="1697000" />
+      <workItem from="1723593149042" duration="371000" />
+      <workItem from="1723616994312" duration="84000" />
+      <workItem from="1723617088372" duration="97000" />
+      <workItem from="1723617191410" duration="773000" />
+      <workItem from="1723617979583" duration="33000" />
+      <workItem from="1723618017760" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1722671499029</created>
@@ -272,7 +504,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722853227816</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/dev' into dev">
+      <created>1723462355261</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1723462355261</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Merge remote-tracking branch 'origin/dev' into dev">
+      <created>1723617918586</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723617918586</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
