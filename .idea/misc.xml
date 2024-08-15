@@ -7,6 +7,14 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Spring1/pom.xml" />
         <option value="$PROJECT_DIR$/Spring2/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringIoc/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringIoc2/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringIoc1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_aop/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_ioc/SpringIoc2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_ioc/spring_ioc_02/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_ioc/spring_ioc_01/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_ioc/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -2,25 +2,30 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <excludeFromCompile>
-      <directory url="file://$PROJECT_DIR$/Spring2/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/spring_ioc/spring_ioc_02/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/spring_ioc/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/spring_aop/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/spring_aop/spring_aop_01/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring2" />
-        <module name="spring1" />
+        <module name="spring_ioc_02" />
+        <module name="spring_ioc_01" />
+        <module name="spring_aop_01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Spring" target="17" />
       <module name="spring2" target="17" />
+      <module name="springIoc1" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Spring2" options="" />
+      <module name="spring_ioc_02" options="" />
     </option>
   </component>
 </project>
