@@ -43,3 +43,60 @@ Spring主要提供如下注解，用于在Bean内部进行属性注入的:
 @Autowired     使用在字段或方法上，用于根据类型(byType)注入引用数据
 @Qualifier     使用在字段或方法上，结合@Autowired，根据名称注入
 @Resource      使用在字段或方法上，根据类型或名称进行注入
+
+扩展:@Profile 注解的作用同于xml配置时学习profile属性，是进行环境切换使用的
+<beans profile="test">
+注解 @Profile 标注在类或方法上，标注当前产生的Bean从属于哪个环境，只有激活了当前环境，被标注的Bean才
+能被注册到Spring容器里，不指定环境的Bean，任何环境下都能注册到Spring容器里
+dRepository("userDao")
+@Profile("test")
+public class UserDaolmpl
+implements UserDao{}
+@Repository("userDao2")
+public class UserDaoImpl2
+implements UserDao{}
+可以使用以下两种方式指定被激活的环境:
+使用命令行动态参数，虚拟机参数位置加载-spring.profiles.active=test
+使用代码的方式设置环境变量 System.setProperty("spring.profiles.active","test”);
+
+第三方框架整合，依然使用MyBatis作为整合对象，之前我们已经使用xml方式整合了MyBatis，现在使用注解方式
+无非就是将xml标签替换为注解，将xml配置文件替换为配置类而已，原有xml方式整合配置如下:
+<!--配置数据源-->
+class="com.alibaba.druid.pool.DruidDatasource">
+<bean id="datasource
+<property name=“url” value="jdbc:mysql://localhost:3306/mybatis"></property>
+<property name = "username" value="root"></property>
+<property name="password" value="root"></property>
+</bean>
+<!--配置SalSessionFactoryBean
+bean class:"org.mybatis.spring.SqlsessionFactoryBean">
+<property name="datasource!
+ref="datasource"></property>
+</bean>
+<!--配置Mapper包扫描
+bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+value="com.clover.dao"></property>
+<property name="basePackage"
+</bean>
+
+注解方式，Spring整合MyBatis的原理，关键在于@MapperScan，@MapperScan不是Spring提供的注解，是
+MyBatis为了整合Spring，在整合包org.mybatis.spring.annotation中提供的注解，源码如下:
+@Retention(RetentionPolicy.RUNTIME)
+dTarget({ElementType.TYPE})
+@Documented
+@Import({MapperScannerRegistrar.class})
+@Repeatable(MapperScans.class)
+public interface MapperScan(
+String||value()default {};
+String||basePackages()default {};
+Class<?>||basePackageClasses()default ;
+Class<? extends Annotation> annotationClass() default Annotation.class,
+重点关注一下@Import({MapperScannerRegistrar.class})，当@MapperScan被扫描加载时，会解析@lmport注
+解，从而加载指定的类，此处就是加载了MapperScannerRegistrar
+
+Spring与MyBatis注解方式整合有个重要的技术点就是@lmport，第三方框架与Spring整合xml方式很多是凭借自
+定义标签完成的，而第三方框架与Spring整合注解方式很多是靠@Import注解完成的。
+@Import可以导入如下三种类:
+普通的配置类
+实现ImportSelector接口的类
+实现ImportBeanDefinitionRegistrar接囗的类
