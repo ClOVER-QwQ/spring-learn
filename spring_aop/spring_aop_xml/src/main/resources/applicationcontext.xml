@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="userService" class="com.clover.service.impl.UserServiceImpl"/>
+
+    <bean id="myAdvice" class="com.clover.advice.MyAdvice"/>
+
+<!--    <bean class="com.clover.MockAopBeanPostProcessor"/>-->
+
+    <!--aop配置-->
+    <aop:config>
+        <!--配置切点表达式:指点那些方法被增强-->
+        <aop:pointcut id="myPointcut" expression="execution(void com.clover.service.impl.UserServiceImpl.show3())"/>
+        <aop:pointcut id="myPointcut2" expression="execution(* com.clover.service.impl.UserServiceImpl.*())"/>
+        <!--配置植入:配置那些切点与那些切点与通知增强了-->
+        <aop:aspect ref="myAdvice">
+            <aop:before method="beforeAdvice" pointcut-ref="myPointcut"/>
+            <aop:before method="beforeAdvice" pointcut-ref="myPointcut2"/>
+            <aop:after method="afterAdvice" pointcut-ref="myPointcut2"/>
+            <aop:after-returning method="afterAdvice" pointcut="execution(void com.clover.service.impl.UserServiceImpl.show3())"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>

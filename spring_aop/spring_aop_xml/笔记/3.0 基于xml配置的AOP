@@ -1,0 +1,82 @@
+1、导入AOP相关坐标;
+2、准备目标类、准备增强类，并配置给Spring管理:
+3、配置切点表达式(哪些方法被增强)
+4、配置织入(切点被哪些通知方法增强，是前置增强还是后置增强)
+
+AOP详细配置的细节
+切点表达式的配置方式
+切点表达式是配置要对哪些连接点(哪些类的哪些方法)进行通知的增强，语法如下:
+execution([访问修饰符]返回值类型 包名.类名.方法名(参数))
+其中，
+访问修饰符可以省略不写，
+返回值类型、某一级包名、类名、方法名 可以使用*表示任意;
+包名与类名之间使用单点.表示该包下的类，使用双点.表示该包及其子包下的类，
+参数列表可以使用两个点.表示任意参数。
+切点表达式举几个例子方便理解
+//表示访问修饰符为public、无返回值、在com.clover.aop包下的TargetImpl类的无参方法show
+execution(public void com.clover.aop.TargetImpl.show())
+//表述com.clover.aop包下的TargetImpl类的任意方法
+execution(*com.clover.aop.TargetImpl.*(..))
+//表示com.clover.aop包下的任意类的任意方法
+execution(* com.clover.aop.*.*(..))
+//表示com.clover.aop包及其子包下的任意类的任意方法
+execution(* com.clover.aop..*.*(..))
+//表示任意包中的任意类的任意方法
+execution(* *..*.*(..))
+
+通知的类型
+Aspectj的通知由以下五种类型
+通知名称      配置方式                         执行时机
+前置通知   <aop:before >                 目标方法执行之前执行
+后置通知   < aop:after-returning >       目标方法执行之后执行,目标方法异常时，不在执行
+环绕通知   <aop:around>                  目标方法执行前后执行，目标方法异常时，环绕后方法不在执行
+异常通知   < aop:after-throwing >        目标方法抛出异常时执行
+最终通知   <aop:after >                  不管目标方法是否有异常，最终都会执行
+
+环绕通知方法
+public object around(ProceedingJoinPoint proceedingJoinPoint) throws Throwable{
+System.out,println("环绕前的增强....");
+Object res=proceedingJoinPoint.proceed();//执行目标方法
+System.out.print1n("环绕后的增强....");
+return res;
+}
+
+ProceedingJoinPoint对象
+public Object around(ProceedingJoinPoint joinPoint) throws Throwable{
+System.out.println(joinPoint.getArgs());//获得目标方法的参数
+System.out.println(joinPoint,getTarget());//获得目标对象
+System.out.println(joinPoint.getStaticPart());//获得精确的切点表达式信息
+Object result=joinPoint.proceed();//执行目标方法
+return result;//返回目标方法返回值
+}
+
+Throwable对象
+public void afterThrowing (JoinPoint joinPoint,Throwable th){
+//获得异常信息
+System.out.println("异常对象是:"+th+"异常信息是:"+th.getMessage());
+}
+<aop:after-throwing method="afterThrowing" pointcut-ref"myPointcut" throwing="th"/>
+
+AOP的配置的两种切面配置类型
+切点表达式的配置语法
+AOP的xml有两种配置方式，如下:
+使用<aspect>配置切面(以上是该方法）
+使用<advisor>配置切面
+
+使用<advisor>配置切面(比较少）
+Spring定义了一个Advice接口，
+实现了该接口的类都可以作为通知类出现
+public interface Advice{}
+通过实现该接口的子接口来告诉Sping容器通知的类型
+
+AOP配置的两种语法形式不同点
+语法形式不同:
+advisor是通过实现接口来确认通知的类型
+aspect是通过配置确认通知的类型，更加灵活
+可配置的切面数量不同:
+-个advisor只能配置一个固定通知和一个切点表达式
+一个aspect可以配置多个通知和多个切点表达式任意组合
+使用场景不同:
+允许随意搭配情况下可以使用aspect进行配置
+如果通知类型单一、切面单一的情况下可以使用advisor进行配置
+在通知类型已经固定，不用人为指定通知类型时，可以使用advisor进行配置，例如后面要学习的Spring事务控制的配置
