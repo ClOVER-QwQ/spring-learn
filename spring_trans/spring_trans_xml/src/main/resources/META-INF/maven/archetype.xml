@@ -1,9 +1,0 @@
-<archetype>
-  <id>spring_trans_xml</id>
-  <sources>
-    <source>src/main/java/App.java</source>
-  </sources>
-  <testSources>
-    <source>src/test/java/AppTest.java</source>
-  </testSources>
-</archetype>
