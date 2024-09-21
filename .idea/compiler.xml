@@ -8,15 +8,21 @@
       <directory url="file://$PROJECT_DIR$/spring_aop/spring_aop_xml/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/spring_aop/spring_aop_anno/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/spring_trans/src/main/resources/archetype-resources" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/spring_trans/spring_trans_xml/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/spring_trans/spring_trans_anno/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/spring_mvc/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/spring_mvc/spring_mvc_xml/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/spring_mvc/spring_mvc_pre/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring_aop_xml" />
+        <module name="spring_trans_anno" />
         <module name="spring_trans_xml" />
+        <module name="spring_mvc_xml" />
+        <module name="spring_aop_xml" />
+        <module name="spring_mvc_pre" />
         <module name="spring_ioc_anno" />
         <module name="spring_aop_anno" />
         <module name="spring_ioc_xml" />

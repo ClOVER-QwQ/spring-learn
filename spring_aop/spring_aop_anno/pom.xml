@@ -8,7 +8,15 @@
     </parent>
     <artifactId>spring_aop_anno</artifactId>
     <name>spring_aop_anno</name>
-    <url>http://maven.apache.org</url>
+    <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.20</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 
 </project>

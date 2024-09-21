@@ -18,9 +18,9 @@
     <bean id="aClass" class="java.lang.Class" factory-method="forName">
         <constructor-arg name="className" value="com.mysql.jdbc.Driver"/>
     </bean>
-    <bean id="connection" class="java.sql.DriverManager" factory-method="getConnection" scope="prototype">
-        <constructor-arg name="url" value="jdbc:mysql://localhost:3306/userinfo"/>
-        <constructor-arg name="user" value="root"/>
-        <constructor-arg name="password" value="Clover20040302"/>
-    </bean>
+<!--    <bean id="connection" class="java.sql.DriverManager" factory-method="getConnection" scope="prototype">-->
+<!--        <constructor-arg name="url" value="jdbc:mysql://localhost:3306/userinfo"/>-->
+<!--        <constructor-arg name="user" value="root"/>-->
+<!--        <constructor-arg name="password" value="Clover20040302"/>-->
+<!--    </bean>-->
 </beans>

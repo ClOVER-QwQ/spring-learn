@@ -1,0 +1,13 @@
+Spring整合web环境的思路及实现
+在进行Java开发时要遵循三层架构+MVC，Spring操作最核心的就是Spring容器，web层需要注入Service
+service层需要注入Dao(Mapper)，web层使用Servlet技术充当的话，需要在Servlet中获得Spring容器
+AnnotationConfigApplicationContext applicationContext
+new AnnotationConfigApplicationContext (ApplicationContextConfig.class);
+AccountService accountService=(AccountService) applicationContext.getBean("accountService");
+accountService.transferMoney("tom","lucy"，100);
+web层代码如果都去编写创建AnnotationConfigApplicationContext的代码，那么配置类重复被加载了
+Spring容器也重复被创建了，不能每次想从容器中获得一个Bean都得先创建一次容器，这样肯定是不允许。
+所以，我们现在的诉求很简单，如下:
+ApplicationContext创建一次，配置类加载一次;
+最好web服务器启动时，就执行第1步操作，后续直接从容器中获取Bean使用即可
+ApplicationContext的引用需要在web层任何位置都可以获取到。

@@ -1,0 +1,8 @@
+基于xml声明式事务控制
+结合上面我们学习的AOP的技术，很容易就可以想到，可以使用AOP对Service的方法进行事务的增强。
+目标类:自定义的AccountServiceImpl，内部的方法是切点
+通知类:Spring提供的，通知方法已经定义好，只需要配置即可
+我们分析:
+通知类是Spring提供的，需要导入Spring事务的相关的坐标:;
+配置目标类AccountServiceImpl;
+使用advisor标签配置切面。
